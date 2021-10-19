@@ -12,7 +12,7 @@ spec:
       sourceRef:
         kind: GitRepository
         name: podinfo
-        namespace: flux-system
+        namespace: test3
       interval: 1m
   test:
     enable: true
