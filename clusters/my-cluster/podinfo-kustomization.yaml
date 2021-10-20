@@ -10,4 +10,4 @@ spec:
   sourceRef:
     kind: GitRepository
     name: podinfo
-  targetNamespace: test7
+  targetNamespace: t001-u000003
