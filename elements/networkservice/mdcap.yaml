@@ -4,7 +4,7 @@ metadata:
   name: mdcap
   version: 1.7.1
 spec:
-  nfps:
+  nfpRefs:
     - name: mdcapds
       version: 1.7.1  
       clusterRef:
