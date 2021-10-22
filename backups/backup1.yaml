@@ -1,0 +1,12 @@
+apiVersion: mdcap.robin.io/v1
+kind: BACKUP
+metadata:
+  name: backup1
+  description: foo bar
+spec:
+  nsRef:
+    name: demo
+  snapshotRef:
+    name: snapshot1
+  bucketRef:
+    name: minio.dev
