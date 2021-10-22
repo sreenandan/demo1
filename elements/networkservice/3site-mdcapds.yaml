@@ -1,0 +1,23 @@
+apiVersion: mdcap.robin.io/v1
+kind: NETWORK_SERVICE
+metadata:
+  name: mdcapds
+  version: 1.7.1
+spec:
+  nfps:
+    - name: mdcapds
+      version: 1.7.1
+      values:
+        ref: staging    
+      clusterRef:
+      - name: cscale-82-119
+        kind: ROBINCLUSTER
+      - name: cscale-82-120
+        kind: ROBINCLUSTER
+      - name: cscale-82-121
+        kind: ROBINCLUSTER
+        # per cluster values
+        values:
+          media: HDD
+  hierarchy:
+  - mdcapds

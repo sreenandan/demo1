@@ -1,0 +1,30 @@
+apiVersion: mdcap.robin.io/v1
+kind: NETWORK_SERVICE
+metadata:
+  name: mdcap
+  version: 1.7.1
+spec:
+  nfps:
+    - name: mdcapds
+      version: 1.7.1  
+      clusterRef:
+      - name: cscale-82-119
+        kind: ROBINCLUSTER
+      - name: cscale-82-120
+        kind: ROBINCLUSTER
+      - name: cscale-82-121
+        kind: ROBINCLUSTER
+    - name: mdcap
+      version: 1.7.1    
+      clusterRef:
+      - kind: ROBINCLUSTER
+        name: cscale-82-121
+    - name: haproxy
+      version: 1.7.1    
+      clusterRef:
+      - kind: ROBINCLUSTER
+        name: cscale-82-121        
+  hierarchy:
+  - mdcapds
+  - mdcap
+  - haproxy
