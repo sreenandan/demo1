@@ -5,8 +5,7 @@ metadata:
   version: 1.7.1
 spec:
   nfpRefs:
-    - name: mdcapds
-      version: 1.7.1  
+    - nfp: mdcapds:1.7.1
       clusterRef:
       - name: cscale-82-119
         kind: ROBINCLUSTER
@@ -14,17 +13,15 @@ spec:
         kind: ROBINCLUSTER
       - name: cscale-82-121
         kind: ROBINCLUSTER
-    - name: mdcap
-      version: 1.7.1    
+    - nfp: mdcap:1.7.1
       clusterRef:
       - kind: ROBINCLUSTER
         name: cscale-82-121
-    - name: haproxy
-      version: 1.7.1    
+    - nfp: haproxy:1.7.1
       clusterRef:
       - kind: ROBINCLUSTER
         name: cscale-82-121        
   hierarchy:
-  - mdcapds
-  - mdcap
-  - haproxy
+  - mdcapds:1.7.1
+  - mdcap:1.7.1
+  - haproxy:1.7.1

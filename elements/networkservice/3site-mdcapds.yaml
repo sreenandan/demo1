@@ -5,8 +5,7 @@ metadata:
   version: 1.7.1
 spec:
   nfpRefs:
-    - name: mdcapds
-      version: 1.7.1
+    - name: mdcapds:1.7.1
       values:
         ref: staging    
       clusterRef:
@@ -20,4 +19,4 @@ spec:
         values:
           media: HDD
   hierarchy:
-  - mdcapds
+  - mdcapds:1.7.1
