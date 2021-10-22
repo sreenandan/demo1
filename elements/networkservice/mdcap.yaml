@@ -7,20 +7,15 @@ spec:
   nfpRefs:
     - nfp: mdcapds:1.7.1
       clusterRef:
-      - name: cscale-82-119
-        kind: ROBINCLUSTER
-      - name: cscale-82-120
-        kind: ROBINCLUSTER
-      - name: cscale-82-121
-        kind: ROBINCLUSTER
+      - ROBINCLUSTER/cscale-82-119
+      - ROBINCLUSTER/cscale-82-120
+      - ROBINCLUSTER/cscale-82-121
     - nfp: mdcap:1.7.1
       clusterRef:
-      - kind: ROBINCLUSTER
-        name: cscale-82-121
+        - ROBINCLUSTER/cscale-82-121
     - nfp: haproxy:1.7.1
       clusterRef:
-      - kind: ROBINCLUSTER
-        name: cscale-82-121        
+      - ROBINCLUSTER/cscale-82-121        
   hierarchy:
   - mdcapds:1.7.1
   - mdcap:1.7.1
