@@ -1,0 +1,15 @@
+apiVersion: mdcap.robin.io/v1
+kind: POSTGRES
+metadata:
+  name: pg1
+spec:
+  pgresources:
+    cpu: 2
+    mem: 4
+    network: demo-ovs
+  pgconf:
+    database: postgres
+    user: postgres
+    password: postgres
+  clusterRef:
+    name: sjc
