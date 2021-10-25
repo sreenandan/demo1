@@ -1,7 +1,7 @@
 apiVersion: mdcap.robin.io/v1
 kind: BM
 metadata:
-  name: sjc002.robin.io
+  name: sjc002
   version: '1.0'
   flavor: default
   description: Quanta Baremetal Server

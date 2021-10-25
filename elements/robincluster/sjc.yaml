@@ -9,11 +9,11 @@ metadata:
     location: sjc
 spec:
   infraRef:
-    - name: sjc001.robin.io
+    - name: sjc001
       kind: BM
-    - name: sjc002.robin.io
+    - name: sjc002
       kind: BM
-    - name: sjc003.robin.io
+    - name: sjc003
       kind: BM
   robin_config:
     build_url: http://10.9.200.61:8080/job/Robin_5.2.x_Binary/373/artifact/artifacts/
@@ -21,10 +21,10 @@ spec:
     agent_install_args: "--ignore-warnings"
     install_type: HA
     name: sjc
-    primary_master: sjc001.robin.io
+    primary_master: sjc001
     secondary_masters:
-    - sjc002.robin.io
-    - sjc003.robin.io
+    - sjc002
+    - sjc003
     agents: []    
     robin_password: Passw0rd
     robin_user: admin
