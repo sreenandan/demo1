@@ -1,0 +1,21 @@
+apiVersion: mdcap.robin.io/v1
+kind: FUNCTION
+metadata:
+  name: test10
+spec:
+  version: v1
+  operator: shell
+  cmd: ''
+  source: functions/src/test10.sh
+  description: test script for ROBINCLUSTER
+  envs: ''
+  types:
+  - ROBINCLUSTER
+  reserved_envs: UPDATE_PAYLOAD,ACCESS_TOKEN
+  fanout: 1
+  mode: UNIT
+  mem_size: 262144000
+  cpu: 1
+  timeout: 0
+  action: mutable
+  runtime: artifactory.robinsystems.com/docker/mdcap/helm/mdcap-worker:1.7.1-818
