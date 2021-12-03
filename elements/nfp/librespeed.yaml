@@ -11,6 +11,7 @@ spec:
     chart_url: http://10.9.70.51/v1/bin/test.tar.gz
   values:
     dev: {}
+    sandbox: {}
     staging: {}
     prod: {}
   vendor: librespeed
