@@ -12,6 +12,5 @@ spec:
   values:
     dev: {}
     sandbox: {}
-    staging: {}
     prod: {}
   vendor: librespeed
