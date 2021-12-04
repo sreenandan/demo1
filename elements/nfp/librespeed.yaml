@@ -12,4 +12,5 @@ spec:
   values:
     dev: {}
     sandbox: {}
+    sandbox1: {}
   vendor: librespeed
