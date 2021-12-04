@@ -3,7 +3,7 @@ kind: BM
 metadata:
   name: sjc004
   version: '1.0'
-  flavor: default
+  flavor: quanta
   description: Quanta Baremetal Server
 spec:
   connectors:
